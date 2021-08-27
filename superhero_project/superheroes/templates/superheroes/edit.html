@@ -7,7 +7,7 @@
   <title>Edit Hero</title>
 </head>
 <body>
-  <form action="{%url 'superheroes:edit' edit_hero.id %}" method="post">
+  <form action="{%url 'superheroes:edit' fix_hero.id %}" method="post">
     {%csrf_token %} 
     
     Name: <input type="text" name="name" id="name" /><br />
@@ -17,5 +17,6 @@
     Catchphrase: <input type="text" name="catchphrase" id="catchphrase" /><br />
     <input type="submit" value="confirm changes!">
     </form>
+    <h4> <a href = "{% url 'superheroes:index' %}">discard changes</a></h4>
 </body>
 </html>
