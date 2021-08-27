@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superhero Index</title>
+</head>
+
+<body>
+    <br>
+    <h2> <u>Superhero Detail</u></h2>
+    <ul>
+        <li><h3>Hero Name: {{single_hero.name}}</h3></li>
+        <li><h3>Alter Ego: {{single_hero.alter_ego}}</h3></li> -->
+        <li><h3>Hero Catch Phrase:<i> "{{single_hero.catch_phrase}}"</i></h2></li>     
+        <li><h3>Primary Ability: {{single_hero.primary_ability}}</h3></li>
+        <li><h3>Secondary Ability: {{single_hero.secondary_ability}}</h3></li>
+    </ul>  
+    <br>
+    <h3><a href = "{% url 'superheroes:index' %}">Return to Hero List</a></h3>
+</body>
+
+</html>
